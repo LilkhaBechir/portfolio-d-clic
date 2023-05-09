@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --gray: #6c757d;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+* {
+  margin: 0;
+  padding: 0;
+  filter: opacity(100%);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: center / contain no-repeat url(./images/bg_img.jpg);
+  background-size: cover;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  background-color: black;
+  filter: opacity(70%);
+}
+
+/* body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: center / contain no-repeat url(./images/bg_img.jpg);
+  filter: blur(25%) opacity(80%);
+  background-size: cover;
+} */
+nav,
+.sidenav,
+h2,
+h3,
+footer {
+  text-transform: uppercase;
+}
+.icone-container,
+.icone-container ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 5%;
+}
+nav {
+  background-color: transparent;
+}
+nav img,
+.sidenav img {
+  height: 50px;
+  margin-left: 5%;
+}
+nav li a {
+  color: #fff;
+}
+nav ul a:hover {
+  border-bottom: 2px solid #fff;
+}
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 20px;
+  font-weight: 900;
+}
+h2::after {
+  content: "";
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+}
+.accueil_title::after {
+  content: "developpement web et application mobile - cohorte 1";
+}
+.apropos_title::after {
+  content: "formez-vous au numérique";
+}
+.portfolio_title::after {
+  content: "portfolio";
+}
+.contact_title::after {
+  content: "developpement web et application mobile - cohorte 1";
+}
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 2px solid var(--teal);
+}
+h3 span,
+.line span {
+  width: 300px;
+  display: block;
+  margin: 20px auto 0;
+  height: 6px;
+  background-color: var(--teal);
+}
+.line {
+  border-bottom: 2px solid var(--teal);
+}
+.image_container .col {
+  margin: 0 50px;
+}
+.image_container p {
+  margin: 10px auto;
+  width: 200px;
+  height: 220px;
+  border: 4px solid var(--teal);
+  border-radius: 25px;
+}
+.image_container p {
+  background: url(./images/default_img.jpg) no-repeat center/cover;
+  border: 4px solid var(--blue);
+}
+.image_container .row > div:first-child > p {
+  background: url(./images/mois_1_img1.jpg) no-repeat center/cover;
+  border: 4px solid var(--red);
+}
+.image_container .row > div:nth-child(2) > p {
+  background: url(./images/mois_2_img1.jpg) no-repeat center/cover;
+  border: 4px solid var(--indigo);
+}
+.image_container .row > div:nth-child(3) > p {
+  border: 4px solid var(--yellow);
+}
+.image_container .row > div:nth-child(4) > p {
+  border: 4px solid var(--green);
+}
+.image_container .row > div:nth-child(5) > p {
+  border: 4px solid var(--cyan);
+}
+
+.image_container span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.principal {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.principal:last-child {
+  text-align: center;
+  margin-top: 30px;
+}
+/* .number {
+  display: flex;
+  justify-content: space-evenly;
+} */
+h4 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  width: 130px;
+  margin-right: 20px;
+}
+.text-container p {
+  margin: 20px auto;
+  line-height: 2rem;
+}
+.number h4::after {
+  content: "";
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.4rem;
+  padding-top: 10px;
+  width: 130px;
+  margin: 0 auto;
+}
+.number h4:first-child::after {
+  content: "Etats et gouvernements ciblés";
+  border-top: 3px solid var(--yellow);
+}
+.number h4:nth-child(2)::after {
+  content: "ans et des dizaines de milliers d’apprenants. C'est l'objectif.";
+  border-top: 3px solid var(--green);
+}
+.number h4:nth-child(3)::after {
+  content: "de femmes parmi les apprenants";
+  border-top: 3px solid var(--cyan);
+}
+.number h4:nth-child(4)::after {
+  content: "cursus de formations brèves (3-9 mois) identifiés";
+  border-top: 3px solid var(--red);
+}
+.number h4:last-child::after {
+  content: "opérateurs de formation sélectionnés";
+  border-top: 3px solid var(--blue);
+}
+.flow-text {
+  margin: 15px 0;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.temoignages_container {
+  margin-top: 20px;
+}
+.temoignages_container img {
+  width: 20rem;
+}
+.portfolio_container img {
+  width: 400px;
+}
+
+.portfolio_container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio_container .text {
+  min-width: 400px;
+  font-size: 2rem;
+  margin: 7rem 2rem;
+}
+.portfolio_container .portfolio_line {
+  background: var(--cyan);
+  width: 2px;
+  height: 700px;
+  margin: 0 15px 20px;
+  padding: 0;
+}
+.portfolio_line span:first-child {
+  display: inline-flex;
+  background: var(--red);
+  width: 20px;
+  height: 20px;
+  margin-top: 200px;
+  border-radius: 50px;
+  position: relative;
+  right: 9px;
+}
+.portfolio_line span:last-child {
+  display: inline-flex;
+  background: var(--gray);
+  width: 20px;
+  height: 20px;
+  margin-top: 280px;
+  border-radius: 50px;
+  position: relative;
+  right: 9px;
+}
+
+footer {
+  background-color: #050505;
+}
+footer p {
+  text-align: center;
+  padding: 15px 0 5px;
+}
