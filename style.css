@@ -229,9 +229,11 @@ h4 {
 }
 
 .portfolio_container .row {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .portfolio_container .text {
   min-width: 400px;
@@ -245,6 +247,7 @@ h4 {
   margin: 0 15px 20px;
   padding: 0;
 }
+
 .portfolio_line span:first-child {
   display: inline-flex;
   background: var(--red);
