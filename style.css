@@ -17,7 +17,6 @@
 * {
   margin: 0;
   padding: 0;
-  filter: opacity(100%);
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -27,28 +26,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-body::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 200%;
-  background-color: black;
-  filter: opacity(70%);
+main {
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
 }
 
-/* body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: center / contain no-repeat url(./images/bg_img.jpg);
-  filter: blur(25%) opacity(80%);
-  background-size: cover;
-} */
 nav,
 .sidenav,
 h2,
@@ -104,7 +86,7 @@ h2::after {
   content: "portfolio";
 }
 .contact_title::after {
-  content: "developpement web et application mobile - cohorte 1";
+  content: "contactez-nous pour plus d'infos";
 }
 h3 {
   font-size: 2rem;
@@ -168,10 +150,6 @@ h3 span,
   text-align: center;
   margin-top: 30px;
 }
-/* .number {
-  display: flex;
-  justify-content: space-evenly;
-} */
 h4 {
   font-size: 3rem;
   font-weight: bold;
@@ -225,7 +203,7 @@ h4 {
   width: 20rem;
 }
 .portfolio_container img {
-  width: 400px;
+  width: 20rem;
 }
 
 .portfolio_container .row {
@@ -236,7 +214,7 @@ h4 {
   flex-wrap: wrap;
 }
 .portfolio_container .text {
-  min-width: 400px;
+  min-width: 20rem;
   font-size: 2rem;
   margin: 7rem 2rem;
 }
