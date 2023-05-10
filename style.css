@@ -40,18 +40,20 @@ footer {
 }
 .icone-container,
 .icone-container ul {
+  margin: 32px 6px;
   display: flex;
   justify-content: flex-end;
   align-content: center;
-  gap: 5%;
+  gap: 10%;
 }
 nav {
-  background-color: transparent;
+  background-color: #050505;
+  position: fixed;
 }
 nav img,
 .sidenav img {
   height: 50px;
-  margin-left: 5%;
+  margin: 7%;
 }
 nav li a {
   color: #fff;
